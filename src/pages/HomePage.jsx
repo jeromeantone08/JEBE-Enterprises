@@ -398,7 +398,7 @@ export default function HomePage() {
                   Accessories
                 </h3>
                 <p className="text-xs text-[#6B655D] mt-2 leading-relaxed">
-                  Professional installation hardware: Heavy-duty MS polymer adhesive, concealed stainless steel clips, H joiners, L corners, and U edge trims.
+                  Professional installation hardware: Heavy-duty MS polymer adhesive, concealed stainless steel clips, H joiners, L corners, and U edge trims. Supplied strictly based on bulk panel orders.
                 </p>
                 <div className="mt-4 pt-4 border-t border-[#E8E3D9] text-xs space-y-1.5 text-[#6B655D]">
                   <div className="flex justify-between">
@@ -406,8 +406,8 @@ export default function HomePage() {
                     <strong className="text-[#1A1816]">Adhesive, Clamps &amp; Trims</strong>
                   </div>
                   <div className="flex justify-between">
-                    <span>Packaging:</span>
-                    <strong className="text-[#1A1816]">Depends on the order</strong>
+                    <span>Supply Order:</span>
+                    <strong className="text-gold-700">Based on Bulk Panel Orders</strong>
                   </div>
                 </div>
               </div>

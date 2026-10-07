@@ -190,7 +190,7 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-[#1A1816]">Matching Trims & Accessories:</strong> L-corners, starter clips, aluminum joining tracks, and adhesives loaded alongside panel cartons.
+                    <strong className="text-[#1A1816]">Matching Trims & Accessories:</strong> L-corners, starter clips, aluminum joining tracks, and adhesives supplied strictly alongside bulk panel cartons (no standalone bulk accessory supply).
                   </div>
                 </div>
               </div>

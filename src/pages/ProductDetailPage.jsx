@@ -185,10 +185,27 @@ export default function ProductDetailPage() {
                   <span className="text-xs font-bold text-emerald-800">{product.dimensions}</span>
                 </div>
                 <div className="flex items-center justify-between border-t border-[#E8E3D9] pt-2">
-                  <span className="text-[10px] uppercase tracking-wider text-[#6B655D] font-bold">Wholesale Packaging:</span>
+                  <span className="text-[10px] uppercase tracking-wider text-[#6B655D] font-bold">
+                    {product.category === 'accessories' ? 'Supply Requirement:' : 'Wholesale Packaging:'}
+                  </span>
                   <span className="text-xs font-bold text-gold-700">{product.boxPacking}</span>
                 </div>
               </div>
+
+              {/* Dedicated Accessory Supply Policy Callout */}
+              {product.category === 'accessories' && (
+                <div className="mt-3.5 p-3.5 bg-amber-50/90 border border-amber-200/90 rounded-sm flex items-start gap-2.5 text-xs text-amber-900 shadow-xs">
+                  <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold block text-amber-950 uppercase text-[10px] tracking-wider">
+                      Accessory Supply Policy
+                    </span>
+                    <p className="text-[11px] text-amber-900 mt-0.5 leading-relaxed">
+                      We do not supply standalone bulk orders for accessories. Accessories (adhesives, concealed clamps, and trims) are supplied strictly based on accompanying bulk wall panel orders.
+                    </p>
+                  </div>
+                </div>
+              )}
 
               {/* Short Description */}
               <p className="text-xs sm:text-sm text-[#6B655D] mt-4 leading-relaxed">
@@ -359,7 +376,7 @@ export default function ProductDetailPage() {
 
             <div className="space-y-2 text-xs divide-y divide-[#E8E3D9]">
               <div className="flex justify-between py-1.5">
-                <span className="text-[#6B655D]">{product.category === 'accessories' ? 'Wholesale Packing:' : 'Standard Box:'}</span>
+                <span className="text-[#6B655D]">{product.category === 'accessories' ? 'Supply Policy:' : 'Standard Box:'}</span>
                 <span className="font-bold text-gold-700 text-right">{product.boxPacking}</span>
               </div>
               <div className="flex justify-between py-1.5">

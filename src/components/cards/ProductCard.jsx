@@ -44,7 +44,7 @@ export default function ProductCard({ product }) {
         {/* Ready Stock Status Badge */}
         <div className="absolute top-3.5 right-3.5 z-10 px-2.5 py-1 bg-white/95 backdrop-blur-md rounded-sm border border-emerald-500/40 text-[10px] text-emerald-700 font-semibold flex items-center gap-1 shadow-sm">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Bulk Ready</span>
+          <span>{product.category === 'accessories' ? 'With Panel Orders' : 'Bulk Ready'}</span>
         </div>
       </div>
 
@@ -70,7 +70,7 @@ export default function ProductCard({ product }) {
             </div>
             {product.boxPacking && (
               <div className="flex items-center justify-between text-[#6B655D]">
-                <span>Wholesale Packing:</span>
+                <span>{product.category === 'accessories' ? 'Supply Policy:' : 'Wholesale Packing:'}</span>
                 <span className="font-semibold text-gold-700">{product.boxPacking.split('(')[0]}</span>
               </div>
             )}

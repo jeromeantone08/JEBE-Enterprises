@@ -124,16 +124,13 @@
 }
 
 .glass-nav {
-  background: rgba(251, 249, 245, 0.94);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(232, 227, 217, 0.9);
+  background: #FBF9F5;
+  border-bottom: 1px solid #E8E3D9;
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(232, 227, 217, 0.9);
+  background: #FFFFFF;
+  border: 1px solid #E8E3D9;
 }
 
 /* Image Hover Zoom Container */

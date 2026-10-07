@@ -31,7 +31,7 @@ A modern, high-performance, responsive business website crafted for **JEBE ENTER
 
 6. **Accessories**:
    - Hardware accessories for panel installation: Heavy-Duty Panel Adhesive, Concealed Fastening Clamps, H Trims, L Trims, and U Trims.
-   - Wholesale packaging: Depends on the order.
+   - Supply Policy: Not supplied as standalone bulk orders; supplied strictly based on accompanying bulk wall panel orders.
 
 ---
 

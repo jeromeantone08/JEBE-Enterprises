@@ -5,7 +5,7 @@ import SectionHeading from '../components/ui/SectionHeading';
 import SEOHead from '../components/ui/SEOHead';
 import { PRODUCTS, PRODUCT_CATEGORIES } from '../data/productsData';
 import { BUSINESS_CONFIG } from '../config/businessConfig';
-import { Search, Phone, Boxes, X, ArrowRight, ShieldCheck, Truck, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Search, Phone, Boxes, X, ArrowRight, ShieldCheck, Truck, Sparkles, CheckCircle2, Info } from 'lucide-react';
 
 export default function ProductsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -202,6 +202,14 @@ export default function ProductsPage() {
                       <p className="text-xs text-[#6B655D] mt-1.5 max-w-xl leading-relaxed">
                         {cat.desc}
                       </p>
+                      {cat.id === 'accessories' && (
+                        <div className="mt-3 p-2.5 bg-amber-50/90 border border-amber-200/90 rounded-sm flex items-start gap-2 text-xs text-amber-900 max-w-xl">
+                          <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                          <p className="text-[11px] leading-relaxed">
+                            <strong className="font-semibold">Accessory Policy:</strong> Accessories are not supplied as standalone bulk orders. Supply is strictly based on accompanying bulk panel orders.
+                          </p>
+                        </div>
+                      )}
                     </div>
 
                     <div className="flex items-center gap-3">
@@ -233,6 +241,19 @@ export default function ProductsPage() {
         ) : (
           /* Filtered View */
           <div>
+            {selectedCategory === 'accessories' && (
+              <div className="mb-8 p-4 bg-amber-50/90 border border-amber-200/90 rounded-sm flex items-start gap-3 text-xs text-amber-900 shadow-xs reveal">
+                <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                <div>
+                  <span className="font-bold uppercase tracking-wider text-[10px] text-amber-950 block">
+                    Accessory Supply Notice
+                  </span>
+                  <p className="text-[11px] text-amber-900 mt-0.5 leading-relaxed">
+                    Please note: We do not supply standalone bulk orders for accessories. Installation accessories (panel adhesives, concealed clips, and joiner trims) are supplied strictly based on accompanying bulk panel orders.
+                  </p>
+                </div>
+              </div>
+            )}
             {filteredProducts.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 {filteredProducts.map((product, pIdx) => (
