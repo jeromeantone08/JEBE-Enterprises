@@ -242,8 +242,8 @@ export default function HomePage() {
                 </p>
                 <div className="mt-4 pt-4 border-t border-[#E8E3D9] text-xs space-y-1.5 text-[#6B655D]">
                   <div className="flex justify-between">
-                    <span>Profile:</span>
-                    <strong className="text-[#1A1816]">Concealed Interlocking</strong>
+                    <span>Dimensions:</span>
+                    <strong className="text-[#1A1816]">10ft (H) x 1ft (W)</strong>
                   </div>
                   <div className="flex justify-between">
                     <span>Packaging:</span>
@@ -279,7 +279,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex justify-between">
                     <span>Packaging:</span>
-                    <strong className="text-[#1A1816]">10 Pieces / Box</strong>
+                    <strong className="text-[#1A1816]">Based on orders</strong>
                   </div>
                 </div>
               </div>

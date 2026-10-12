@@ -16,6 +16,7 @@ A modern, high-performance, responsive business website crafted for **JEBE ENTER
 2. **UV Sheets**:
    - High-gloss 8ft x 4ft UV marble and decorative stone composite sheets.
    - Crystal scratch-resistant UV coating for feature walls and TV backdrops.
+   - Wholesale packaging: Based on orders.
 
 3. **Budget PVC Panels**:
    - 10ft (H) x 1ft (W) interior PVC ceiling panels.

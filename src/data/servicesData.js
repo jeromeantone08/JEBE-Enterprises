@@ -57,7 +57,7 @@ export const SERVICES = [
     longDescription: "Maximize contractor profit margins on luxury feature walls, TV backdrops, and commercial lobbies. Non-porous, waterproof UV sheets that install in hours over old tiles or bare walls.",
     icon: "Layers",
     deliverables: [
-      "Pallet crate packing of 20 sheets (640 sq.ft. per pallet)",
+      "Wholesale crate and pallet packaging customized based on orders",
       "High-gloss crystal UV scratch-resistant surface",
       "Factory protective film on every high-gloss sheet",
       "Direct truckload dispatches across regional markets",

@@ -376,7 +376,9 @@ export default function ProductDetailPage() {
 
             <div className="space-y-2 text-xs divide-y divide-[#E8E3D9]">
               <div className="flex justify-between py-1.5">
-                <span className="text-[#6B655D]">{product.category === 'accessories' ? 'Supply Policy:' : 'Standard Box:'}</span>
+                <span className="text-[#6B655D]">
+                  {product.category === 'accessories' ? 'Supply Policy:' : product.category === 'uv-sheet' ? 'Wholesale Packing:' : 'Standard Box:'}
+                </span>
                 <span className="font-bold text-gold-700 text-right">{product.boxPacking}</span>
               </div>
               <div className="flex justify-between py-1.5">
